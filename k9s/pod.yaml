@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: fastapi-pod
+  labels:
+    app: fastapi
+
+spec:
+  containers:
+    - name: fastapi
+      image: fastapi-app:v3
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 8000
