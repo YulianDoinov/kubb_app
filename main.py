@@ -105,3 +105,4 @@ def get_users(db: Session = Depends(get_db)):
     return [{"id": u.id, "name": u.name} for u in users]
 
 Instrumentator().instrument(app).expose(app)
+
