@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: fastapi
-        image: fastapi-app:v1
+        image: fastapi-app:v3
         imagePullPolicy: Never
 
         ports:
